@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kantin Smk Al-intisab</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- my style -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- alpine js -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- app -->
+    <script src="src/app.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">smk <span>al-intisab</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#products">makanan</a>
+        <a href="#product">minuman</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+
+      <!-- search form start -->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here.." />
+        <label for="search-box"><i data-feather="search"></i></label>
+      </div>
+      <!-- search form end -->
+
+      <!-- shopping cart start -->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/makanan/donat.jfif" alt="donat" />
+          <div class="icon-detail">
+            <h3>Donat</h3>
+            <div class="item-price">Rp 1.500</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/makanan/psicok.jfif" alt="piscok" />
+          <div class="icon-detail">
+            <h3>Piscok</h3>
+            <div class="item-price">Rp 1.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/minuman/sosro-kotak.png" alt="sosro" />
+          <div class="icon-detail">
+            <h3>Teh Sosro Kotak</h3>
+            <div class="item-price">Rp 2.500</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!-- shopping cart end -->
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- hero section start -->
+    <section class="hero" id="home">
+      <div class="mask-container">
+        <main class="content">
+          <h1>Selamat Datang Di Kantin <span>Smk Al-intisab</span></h1>
+
+          <p>
+            Disini anda bisa membeli atau memesan makanan dan minuman secara
+            online dan juga bisa membayar lewat website ini atau membayar
+            langsung ketika mengambil pesanan anda
+          </p>
+          <a href="#" class="cta">Beli Sekarang</a>
+        </main>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+    <!-- About Section start  -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="img/z-mart-1.png" alt="Tentang Kami" />
+        </div>
+
+        <div class="content">
+          <h3>Kenapa Memilih Kopi Kami</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
+            est, asperiores consequuntur optio tempore cum!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            a beatae natus aut ducimus eius obcaecati voluptatibus tenetur?
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section end  -->
+
+    <!-- produk section start -->
+    <section class="products" id="products">
+      <h2><span>Menu</span> Gorengan</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur,
+        molestias saepe temporibus voluptates vel?
+      </p>
+
+      <div class="row">
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/makanan/bala-bala.jpg" alt="Bala-bala" />
+          </div>
+
+          <div class="product-content">
+            <h3>Bala-Bala</h3>
+            <div class="product-start">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 1.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/makanan/cilok.jpg" alt="cilok" />
+          </div>
+
+          <div class="product-content">
+            <h3>Cilok Bumbu Kacang</h3>
+            <div class="product-start">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 1.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/makanan/cireng.jfif" alt="Cireng" />
+          </div>
+
+          <div class="product-content">
+            <h3>Cireng</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 1.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/makanan/donat.jfif" alt="donat" />
+          </div>
+
+          <div class="product-content">
+            <h3>Donat</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 1.500</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/makanan/psicok.jfif" alt="piscok" />
+          </div>
+
+          <div class="product-content">
+            <h3>Piscok</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 1.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/makanan/lumpia.jpg" alt="Lumpia" />
+          </div>
+
+          <div class="product-content">
+            <h3>Risol</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 1.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/makanan/tahu.jpg" alt="tahu" />
+          </div>
+
+          <div class="product-content">
+            <h3>Tahu Goreng</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 1.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/makanan/tempe.jfif" alt="Tempe" />
+          </div>
+
+          <div class="product-content">
+            <h3>Tempe Goreng</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 1.000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="product">
+      <h2><span>Menu</span> Minuman</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consequatur,
+        molestias saepe temporibus voluptates vel?
+      </p>
+
+      <div class="row">
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/aqua.jfif" alt="aqua" />
+          </div>
+
+          <div class="product-content">
+            <h3>AQUA Botol</h3>
+            <div class="product-start">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 5.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/marimas-1.jfif" alt="marimas" />
+          </div>
+
+          <div class="product-content">
+            <h3>Marimas Mangga Apel</h3>
+            <div class="product-start">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 3.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/download.jfif" alt="lemineral" />
+          </div>
+
+          <div class="product-content">
+            <h3>lemineral</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 5.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/marimas-2.jpg" alt="marimas" />
+          </div>
+
+          <div class="product-content">
+            <h3>Marimas Jeruk</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 3.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/marimas-3.jpg" alt="marimas" />
+          </div>
+
+          <div class="product-content">
+            <h3>Marimas Mangga</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 3.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/marimas-4.jpg" alt="marimas" />
+          </div>
+
+          <div class="product-content">
+            <h3>Marimas Anggur</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 3.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/sosro-botol.jpg" alt="sosro" />
+          </div>
+
+          <div class="product-content">
+            <h3>Teh Botol Sosro</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 5.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/sosro-kotak.png" alt="sosro" />
+          </div>
+
+          <div class="product-content">
+            <h3>Teh Sosro Kotak</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 2.500</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/teh-pucuk.jfif" alt="teh pucuk" />
+          </div>
+
+          <div class="product-content">
+            <h3>Teh Pucuk</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 5.000</div>
+          </div>
+        </div>
+
+        <div class="product-cart">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-cart"></i></a>
+            <a href="#" class="item-detail-button"
+              ><i data-feather="eye"></i
+            ></a>
+          </div>
+          <div class="product-image">
+            <img src="img/minuman/teh.jfif" alt="poci" />
+          </div>
+
+          <div class="product-content">
+            <h3>Teh Poci</h3>
+            <div class="product-start">
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 2.000</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- produk section end -->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat?</p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126886.38781076284!2d107.62341249999997!3d-6.368207499999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e696a336f2ecceb%3A0xe783fba2626a23a9!2sKec.%20Patokbeusi%2C%20Kabupaten%20Subang%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1702264206666!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+
+            <input type="text" placeholder="nama" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather="mail"></i>
+
+            <input type="text" placeholder="email" />
+          </div>
+
+          <div class="input-group">
+            <i data-feather="phone"></i>
+
+            <input type="text" placeholder="no Hp" />
+          </div>
+
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+      <div class="socials">
+        <a href="#"><i data-feather="instagram"></i></a>
+        <a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+
+      <div class="credit">
+        <p>Create by <a href="">AnggaraSaputra</a>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer Section end -->
+
+    <!-- modal box item detail start -->
+    <div class="modal" id="item-detail-modal">
+      <div class="modal-container">
+        <a href="#" class="close-icon"><i data-feather="x"></i></a>
+        <div class="modal-content">
+          <img src="img/makanan/cilok.jpg" alt="cilok" />
+          <div class="product-content">
+            <h3>Cilok Bumbu Kacang</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+              dolorum, natus facere odio pariatur quis veritatis rerum harum
+              accusamus, sapiente enim eveniet, cupiditate voluptatem fuga!.
+            </p>
+            <div class="product-start">
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star" class="star-full"></i>
+              <i data-feather="star"></i>
+            </div>
+
+            <div class="product-price">Rp 1.000</div>
+            <a href="#"><i data-feather="shpping-cart"></i>add to cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal box item detail end -->
+
+    <!-- Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My Javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
